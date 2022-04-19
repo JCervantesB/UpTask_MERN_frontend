@@ -3,16 +3,10 @@ import { useParams, Link} from 'react-router-dom'
 import clienteAxios from "../config/clienteAxios"
 import Alerta from "../components/Alerta"
 
-
-
 const ConfirmarCuenta = () => {
-
   const [alerta, setAlerta] = useState({})
-
   const [cuentaConfirmada, setCuentaConfirmada] = useState(false)
-
-  const params = useParams()
-  
+  const params = useParams()  
   const {id} = params
 
   useEffect(()=>{
